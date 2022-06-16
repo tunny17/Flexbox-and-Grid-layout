@@ -1,0 +1,62 @@
+.one    {
+    background-color: red;
+    grid-column: 1 / span 2;
+}
+
+.two    {
+    background-color: green;
+}
+
+.three  {
+    background-color: blueviolet;
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 2;
+}
+
+.four   {
+    background-color: brown;
+    grid-column: 2 / span 2;
+    grid-row: 2 / span 1;
+}
+
+.five   {
+    background-color: royalblue;
+    grid-column: 2 / span 2;
+    grid-row: 3 / span 1;
+}
+
+body    {
+    margin: 100px;
+    margin-left: 420px;
+}
+
+.divs   {
+    display: grid;
+    grid-template-columns: 190px 190px 190px 190px;
+    grid-template-rows: 150px 150px 150px;
+    gap: 10px 10px;
+}
+
+a   {
+    text-decoration: none;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 376px) {
+    .divs   {
+        display: grid;
+        grid-template-columns: 70px 70px 70px 790px;
+        grid-template-rows: 55px 55px 55px;
+        gap: 5px 5px;
+    }
+
+    body  {
+        margin: 100px;
+        
+    }
+
+    a  {
+        margin-bottom: 30px;
+    }
+}
